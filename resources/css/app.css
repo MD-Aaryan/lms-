@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Tailwind 4 measures in rem, so the root font size scales text and spacing together.
+   16px is the browser default and keeps the standard Tailwind scale looking right. */
+html { font-size: 16px; }
+
+/* Alpine: hide elements until the component is ready (avoids a flash of hidden panels). */
+[x-cloak] { display: none !important; }
+
+@theme {
+    --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
