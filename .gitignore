@@ -1,4 +1,5 @@
 *.log
+*.local
 .DS_Store
 .env
 .env.backup
@@ -18,6 +19,7 @@
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
+/public/*.key
 /storage/*.key
 /storage/pail
 /vendor
@@ -25,3 +27,8 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# local agent/notes
+/AGENTS.md
+/CLAUDE.md
+/INTERVIEW_GUIDE.md
